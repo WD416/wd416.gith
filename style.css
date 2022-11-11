@@ -1,13 +1,13 @@
-*{
+html, body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%
 }
 
 
-
-
-
+   
 body{
     width: 100%;
     height: 100%;
@@ -35,6 +35,7 @@ ul{
 
 .boxes{
     background-color: rgba(218, 196, 196, 0.998);
+    
     flex-basis: 70%;
     flex-shrink: 0;
     height: 927px;
@@ -46,6 +47,7 @@ ul{
     flex-basis: 200px;
     flex-grow:0;
     flex-shrink:2;
+    height: 100%;
     margin-right: 5px;
     justify-content: center;
 
@@ -54,6 +56,7 @@ ul{
     flex-basis: 600px;
     flex-grow:2;
     flex-shrink:5;
+    height: 100%;
     margin-right: 5px;
 }
 
@@ -67,9 +70,11 @@ ul{
 .main-menu{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin-top: 40px;
+    justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    padding: 0px;
+    
     
     
 }
@@ -100,9 +105,10 @@ h1{
 @media(max-width: 700px){
     .flex-container{
         flex-direction: column;
+        flex-basis: 100%;
     }
     #box1{
-        flex-basis: 10px;
+        flex-basis: 0px;
         flex-direction: column;
     }
     .flex-container .main-menu{
@@ -113,6 +119,7 @@ h1{
     }
     .h1c{
         margin-bottom: 0px;
+        margin-top: 0px;
     }
     .links{
         display: flex;
@@ -128,6 +135,9 @@ h1{
     }
     #mobile{
         display: table;
+    }
+    .box2{
+        flex-basis: 100%;
     }
  
 }

@@ -25,18 +25,16 @@ ul{
 .flex-container{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     /* border: 2px solid black; */
     width: 90%;
-    max-width: 1800px;
+    max-width: 1500px;
     height: 100%;
     margin: auto;
 }
 
 .boxes{
     background-color: rgba(218, 196, 196, 0.998);
-    
-    flex-basis: 70%;
+    background-size: cover;
     flex-shrink: 0;
     height: 927px;
     border: 2px  solid  rgb(175, 64, 64);
@@ -48,16 +46,17 @@ ul{
     flex-grow:0;
     flex-shrink:2;
     height: 100%;
-    margin-right: 5px;
+    margin-right: 10px;
+    
     justify-content: center;
 
 }
 #box2{
-    flex-basis: 600px;
+    width: 100px;
     flex-grow:2;
     flex-shrink:5;
     height: 100%;
-    margin-right: 5px;
+    
 }
 
 
@@ -108,27 +107,30 @@ h1{
         flex-basis: 100%;
     }
     #box1{
+        height: 80px;
         flex-basis: 0px;
         flex-direction: column;
+        margin: 0px 0px 5px 0px;
     }
     .flex-container .main-menu{
         flex-direction: column;
         flex-basis: 100px;
         height: 100px;
-        margin-top: 5px;
+        margin: 0
     }
     .h1c{
-        margin-bottom: 0px;
+        margin-bottom: 15px;
         margin-top: 0px;
     }
     .links{
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 10px;
         flex-basis: 5px;
         width: 100%;
-        margin-top: 10px;
         flex-direction: row;
+        margin-bottom: 10px;
     }
     #pc{
         display: none;
@@ -143,5 +145,12 @@ h1{
 }
 
 @media(max-width: 390px){
+    #pc{
+        display: none;
+    }
+    #mobile{
+        display: table;
+    }
+
 
 }
